@@ -1,0 +1,136 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-container {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.card-description {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+
+.card-container:hover {
+  transform: translateY(-5px);
+  border: #3e4bff 2px solid;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.card-container p {
+  margin: 6px 0;
+  color: #555;
+}
+
+
+
+.card-container p span {
+  font-weight: bold;
+  color: #3e4bff;
+}
+
+/* Optional: Green/Red coloring for boolean fields */
+.card-container p.boolean-true {
+  color: green;
+  font-weight: bold;
+}
+
+.card-container p.boolean-false {
+  color: red;
+  font-weight: bold;
+}
+
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, white, transparent);
+}
+
+.image-title {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+
+
+.postcode-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  z-index: 2;
+  color: #b3acac;
+  font-weight: 700;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #3e4bff; /* Blue background */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 20px; /* To give space between button and text */
+  box-sizing: border-box; /* Ensures padding is included in the button's width */
+}
+
+.btn:hover {
+  background-color: #2a38cc; /* Darker blue on hover */
+}
+
+.card-container .btn {
+  margin: 10px auto; /* Centers button horizontally */
+  width: 90%; /* Make the button slightly smaller than the card width */
+  max-width: 250px; /* Optionally, restrict max width */
+}
